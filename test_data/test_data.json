@@ -1,0 +1,51 @@
+
+{
+    "valid_contact_data": {
+        "name": "Chandan QA",
+        "email": "qa.test@example.com",
+        "phone": "9812345678",
+        "message": "I would like to contact your organization."
+    },
+
+    "invalid_email_data": {
+        "name": "Chandan QA",
+        "email": "invalid-email",
+        "phone": "9812345678",
+        "message": "Testing invalid email validation."
+    },
+
+    "empty_name_data": {
+        "name": "",
+        "email": "qa.test@example.com",
+        "phone": "9812345678",
+        "message": "Testing empty name field."
+    },
+
+    "empty_email_data": {
+        "name": "Chandan QA",
+        "email": "",
+        "phone": "9812345678",
+        "message": "Testing empty email field."
+    },
+
+    "empty_phone_data": {
+        "name": "Chandan QA",
+        "email": "qa.test@example.com",
+        "phone": "",
+        "message": "Testing empty phone field."
+    },
+
+    "empty_message_data": {
+        "name": "Chandan QA",
+        "email": "qa.test@example.com",
+        "phone": "9812345678",
+        "message": ""
+    },
+
+    "all_fields_empty": {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "message": ""
+    }
+}

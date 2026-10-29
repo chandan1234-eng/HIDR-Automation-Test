@@ -1,0 +1,29 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# pytest cache
+.pytest_cache/
+
+# Generated test reports
+reports/*.html
+
+# Failure screenshots
+screenshots/
+
+# Environment variables and secrets
+.env
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
