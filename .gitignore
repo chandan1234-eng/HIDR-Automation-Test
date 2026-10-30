@@ -12,13 +12,15 @@ env/
 .pytest_cache/
 
 # Generated test reports
-reports/*.html
+# Keep reports/report.html trackable for GitHub
+# reports/*.html
 
 # Failure screenshots
 screenshots/
 
 # Environment variables and secrets
 .env
+.env.*
 
 # IDE settings
 .vscode/
