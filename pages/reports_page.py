@@ -8,7 +8,10 @@ class ReportsPage:
 
     REPORTS_URL = "https://hidr.com.np/publications/reports"
 
-    PDF_URL = "http://admin.hidr.com.np/media/publications/Final_Report_GRB_Report_Press_Ready_25_May_2026.pdf"
+    PDF_URL = (
+        "https://admin.hidr.com.np/media/publications/"
+        "Final_Report_GRB_Report_Press_Ready_25_May_2026.pdf"
+    )
 
     REPORT_LINK = (
         By.XPATH,
@@ -31,13 +34,17 @@ class ReportsPage:
 
         report.click()
 
-        self.wait.until(EC.number_of_windows_to_be(2))
+        self.wait.until(
+            EC.number_of_windows_to_be(2)
+        )
 
         for tab in self.driver.window_handles:
             if tab != original_tab:
                 self.driver.switch_to.window(tab)
                 break
 
-        self.wait.until(EC.url_to_be(self.PDF_URL))
+        self.wait.until(
+            EC.url_to_be(self.PDF_URL)
+        )
 
-        assert self.driver.current_url == self.PDF_URL
+        return self.driver.current_url
